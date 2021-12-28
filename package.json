@@ -1,0 +1,37 @@
+{
+  "name": "tailwind-animatecss",
+  "version": "0.1.0",
+  "description": "animate.css as a Tailwind plugin",
+  "main": "plugin.js",
+  "repository": "https://github.com/dumptyd/tailwind-animatecss/",
+  "author": "dumptyd",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "test": "jest",
+    "demo:tailwind": "tailwindcss -i ./demo/main.css -o ./demo/generated-styles/output.css --watch",
+    "demo:dev": "browser-sync start --server demo --files \"./demo/**/*.*\"",
+    "demo:build": "tailwindcss -i ./demo/main.css -o ./demo/generated-styles/output.css --minify"
+  },
+  "dependencies": {
+    "postcss-js": "^3.0.3",
+    "postcss-selector-parser": "^6.0.8"
+  },
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "browser-sync": "^2.27.7",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.3.0",
+    "jest": "^27.4.5",
+    "jest-matcher-css": "^1.1.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
+  },
+  "peerDependencies": {
+    "animate.css": "^4",
+    "postcss": "^8",
+    "tailwindcss": "^3"
+  }
+}
