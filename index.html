@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <title>tailwind-animatecss &ndash; animate.css as a Tailwind plugin</title>
+  <meta name="description" content="Use animate.css as a Tailwind 3 plugin.">
+
+  <link href="/generated-styles/output.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="layout">
+  <main class="layout__main">
+    <div>
+      <h1 class="main-heading animation-target animatecss animatecss-bounceInDown">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" class="main-heading__logo">
+          <path d="M489.5 226.499C328 231.632 280 346.999 269 409.499C283.333 386.332 328.5 335.5 395 335.5C472.5 335.5 531.5 422 567.5 449C611.237 481.803 699.123 525.115 814.5 490C906.5 462 949.167 364.332 958.5 317.999C914 378.499 846.5 414.838 763 371.999C705.5 342.499 662.5 221 489.5 226.499Z" fill="#07B6D5"/>
+          <path d="M261 500.999C99.5 506.132 51.5 621.499 40.5 683.999C54.8333 660.832 100 610 166.5 610C244 610 303 696.5 339 723.5C382.737 756.303 470.623 799.615 586 764.5C678 736.5 720.667 638.832 730 592.499C685.5 652.999 618 689.338 534.5 646.499C477 616.999 434 495.5 261 500.999Z" fill="#07B6D5"/>
+        </svg>
+        tailwind-animatecss
+      </h1>
+      <p class="main-subheading">
+        <a class="animatecss-link" href="https://animate.style/" target="_blank">animate.css</a> as a Tailwind plugin
+      </p>
+
+      <a href="https://github.com/dumptyd/tailwind-animatecss/" title="GitHub repository" class="main-github">
+        <svg class="main-github__logo" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+        Get the plugin <span class="main-github__arrow">&rarr;</span>
+      </a>
+    </div>
+  </main>
+
+  <aside class="layout__sidebar">
+    <ul class="animation-list">
+
+      <li class="animation-list__heading">Attention seekers</li>
+      <li><button data-animation-name="animatecss-bounce">bounce</button></li>
+      <li><button data-animation-name="animatecss-flash">flash</button></li>
+      <li><button data-animation-name="animatecss-pulse">pulse</button></li>
+      <li><button data-animation-name="animatecss-rubberBand">rubberBand</button></li>
+      <li><button data-animation-name="animatecss-shakeX">shakeX</button></li>
+      <li><button data-animation-name="animatecss-shakeY">shakeY</button></li>
+      <li><button data-animation-name="animatecss-headShake">headShake</button></li>
+      <li><button data-animation-name="animatecss-swing">swing</button></li>
+      <li><button data-animation-name="animatecss-tada">tada</button></li>
+      <li><button data-animation-name="animatecss-wobble">wobble</button></li>
+      <li><button data-animation-name="animatecss-jello">jello</button></li>
+      <li><button data-animation-name="animatecss-heartBeat">heartBeat</button></li>
+
+      <li class="animation-list__heading">Back entrances</li>
+      <li><button data-animation-name="animatecss-backInDown">backInDown</button></li>
+      <li><button data-animation-name="animatecss-backInLeft">backInLeft</button></li>
+      <li><button data-animation-name="animatecss-backInRight">backInRight</button></li>
+      <li><button data-animation-name="animatecss-backInUp">backInUp</button></li>
+
+      <li class="animation-list__heading">Back exits</li>
+      <li><button data-animation-name="animatecss-backOutDown">backOutDown</button></li>
+      <li><button data-animation-name="animatecss-backOutLeft">backOutLeft</button></li>
+      <li><button data-animation-name="animatecss-backOutRight">backOutRight</button></li>
+      <li><button data-animation-name="animatecss-backOutUp">backOutUp</button></li>
+
+      <li class="animation-list__heading">Bouncing entrances</li>
+      <li><button data-animation-name="animatecss-bounceIn">bounceIn</button></li>
+      <li><button data-animation-name="animatecss-bounceInDown">bounceInDown</button></li>
+      <li><button data-animation-name="animatecss-bounceInLeft">bounceInLeft</button></li>
+      <li><button data-animation-name="animatecss-bounceInRight">bounceInRight</button></li>
+      <li><button data-animation-name="animatecss-bounceInUp">bounceInUp</button></li>
+
+      <li class="animation-list__heading">Bouncing exits</li>
+      <li><button data-animation-name="animatecss-bounceOut">bounceOut</button></li>
+      <li><button data-animation-name="animatecss-bounceOutDown">bounceOutDown</button></li>
+      <li><button data-animation-name="animatecss-bounceOutLeft">bounceOutLeft</button></li>
+      <li><button data-animation-name="animatecss-bounceOutRight">bounceOutRight</button></li>
+      <li><button data-animation-name="animatecss-bounceOutUp">bounceOutUp</button></li>
+
+      <li class="animation-list__heading">Fading entrances</li>
+      <li><button data-animation-name="animatecss-fadeIn">fadeIn</button></li>
+      <li><button data-animation-name="animatecss-fadeInDown">fadeInDown</button></li>
+      <li><button data-animation-name="animatecss-fadeInDownBig">fadeInDownBig</button></li>
+      <li><button data-animation-name="animatecss-fadeInLeft">fadeInLeft</button></li>
+      <li><button data-animation-name="animatecss-fadeInLeftBig">fadeInLeftBig</button></li>
+      <li><button data-animation-name="animatecss-fadeInRight">fadeInRight</button></li>
+      <li><button data-animation-name="animatecss-fadeInRightBig">fadeInRightBig</button></li>
+      <li><button data-animation-name="animatecss-fadeInUp">fadeInUp</button></li>
+      <li><button data-animation-name="animatecss-fadeInUpBig">fadeInUpBig</button></li>
+      <li><button data-animation-name="animatecss-fadeInTopLeft">fadeInTopLeft</button></li>
+      <li><button data-animation-name="animatecss-fadeInTopRight">fadeInTopRight</button></li>
+      <li><button data-animation-name="animatecss-fadeInBottomLeft">fadeInBottomLeft</button></li>
+      <li><button data-animation-name="animatecss-fadeInBottomRight">fadeInBottomRight</button></li>
+
+      <li class="animation-list__heading">Fading exits</li>
+      <li><button data-animation-name="animatecss-fadeOut">fadeOut</button></li>
+      <li><button data-animation-name="animatecss-fadeOutDown">fadeOutDown</button></li>
+      <li><button data-animation-name="animatecss-fadeOutDownBig">fadeOutDownBig</button></li>
+      <li><button data-animation-name="animatecss-fadeOutLeft">fadeOutLeft</button></li>
+      <li><button data-animation-name="animatecss-fadeOutLeftBig">fadeOutLeftBig</button></li>
+      <li><button data-animation-name="animatecss-fadeOutRight">fadeOutRight</button></li>
+      <li><button data-animation-name="animatecss-fadeOutRightBig">fadeOutRightBig</button></li>
+      <li><button data-animation-name="animatecss-fadeOutUp">fadeOutUp</button></li>
+      <li><button data-animation-name="animatecss-fadeOutUpBig">fadeOutUpBig</button></li>
+      <li><button data-animation-name="animatecss-fadeOutTopLeft">fadeOutTopLeft</button></li>
+      <li><button data-animation-name="animatecss-fadeOutTopRight">fadeOutTopRight</button></li>
+      <li><button data-animation-name="animatecss-fadeOutBottomRight">fadeOutBottomRight</button></li>
+      <li><button data-animation-name="animatecss-fadeOutBottomLeft">fadeOutBottomLeft</button></li>
+
+      <li class="animation-list__heading">Flippers</li>
+      <li><button data-animation-name="animatecss-flip">flip</button></li>
+      <li><button data-animation-name="animatecss-flipInX">flipInX</button></li>
+      <li><button data-animation-name="animatecss-flipInY">flipInY</button></li>
+      <li><button data-animation-name="animatecss-flipOutX">flipOutX</button></li>
+      <li><button data-animation-name="animatecss-flipOutY">flipOutY</button></li>
+
+      <li class="animation-list__heading">Lightspeed</li>
+      <li><button data-animation-name="animatecss-lightSpeedInRight">lightSpeedInRight</button></li>
+      <li><button data-animation-name="animatecss-lightSpeedInLeft">lightSpeedInLeft</button></li>
+      <li><button data-animation-name="animatecss-lightSpeedOutRight">lightSpeedOutRight</button></li>
+      <li><button data-animation-name="animatecss-lightSpeedOutLeft">lightSpeedOutLeft</button></li>
+
+      <li class="animation-list__heading">Rotating entrances</li>
+      <li><button data-animation-name="animatecss-rotateIn">rotateIn</button></li>
+      <li><button data-animation-name="animatecss-rotateInDownLeft">rotateInDownLeft</button></li>
+      <li><button data-animation-name="animatecss-rotateInDownRight">rotateInDownRight</button></li>
+      <li><button data-animation-name="animatecss-rotateInUpLeft">rotateInUpLeft</button></li>
+      <li><button data-animation-name="animatecss-rotateInUpRight">rotateInUpRight</button></li>
+
+      <li class="animation-list__heading">Rotating exits</li>
+      <li><button data-animation-name="animatecss-rotateOut">rotateOut</button></li>
+      <li><button data-animation-name="animatecss-rotateOutDownLeft">rotateOutDownLeft</button></li>
+      <li><button data-animation-name="animatecss-rotateOutDownRight">rotateOutDownRight</button></li>
+      <li><button data-animation-name="animatecss-rotateOutUpLeft">rotateOutUpLeft</button></li>
+      <li><button data-animation-name="animatecss-rotateOutUpRight">rotateOutUpRight</button></li>
+
+      <li class="animation-list__heading">Specials</li>
+      <li><button data-animation-name="animatecss-hinge">hinge</button></li>
+      <li><button data-animation-name="animatecss-jackInTheBox">jackInTheBox</button></li>
+      <li><button data-animation-name="animatecss-rollIn">rollIn</button></li>
+      <li><button data-animation-name="animatecss-rollOut">rollOut</button></li>
+
+      <li class="animation-list__heading">Zooming entrances</li>
+      <li><button data-animation-name="animatecss-zoomIn">zoomIn</button></li>
+      <li><button data-animation-name="animatecss-zoomInDown">zoomInDown</button></li>
+      <li><button data-animation-name="animatecss-zoomInLeft">zoomInLeft</button></li>
+      <li><button data-animation-name="animatecss-zoomInRight">zoomInRight</button></li>
+      <li><button data-animation-name="animatecss-zoomInUp">zoomInUp</button></li>
+
+      <li class="animation-list__heading">Zooming exits</li>
+      <li><button data-animation-name="animatecss-zoomOut">zoomOut</button></li>
+      <li><button data-animation-name="animatecss-zoomOutDown">zoomOutDown</button></li>
+      <li><button data-animation-name="animatecss-zoomOutLeft">zoomOutLeft</button></li>
+      <li><button data-animation-name="animatecss-zoomOutRight">zoomOutRight</button></li>
+      <li><button data-animation-name="animatecss-zoomOutUp">zoomOutUp</button></li>
+
+      <li class="animation-list__heading">Sliding entrances</li>
+      <li><button data-animation-name="animatecss-slideInDown">slideInDown</button></li>
+      <li><button data-animation-name="animatecss-slideInLeft">slideInLeft</button></li>
+      <li><button data-animation-name="animatecss-slideInRight">slideInRight</button></li>
+      <li><button data-animation-name="animatecss-slideInUp">slideInUp</button></li>
+
+      <li class="animation-list__heading">Sliding exits</li>
+      <li><button data-animation-name="animatecss-slideOutDown">slideOutDown</button></li>
+      <li><button data-animation-name="animatecss-slideOutLeft">slideOutLeft</button></li>
+      <li><button data-animation-name="animatecss-slideOutRight">slideOutRight</button></li>
+      <li><button data-animation-name="animatecss-slideOutUp">slideOutUp</button></li>
+    </ul>
+  </aside>
+
+
+  <script>
+    var $ = document.querySelector.bind(document);
+    var $$ = document.querySelectorAll.bind(document);
+    var animationTargetEl = $('.animation-target');
+    var lastAnimation = 'animatecss-bounceInDown';
+
+    Array.from($$('button[data-animation-name]')).forEach(function(btn) {
+      btn.addEventListener('click', function(evt) {
+        animationTargetEl.classList.remove(lastAnimation);
+        lastAnimation = event.target.dataset.animationName;
+        animationTargetEl.classList.add(lastAnimation);
+      });
+    });
+
+    animationTargetEl.addEventListener('animationend', function() {
+      var animationToRemove = lastAnimation; // closure
+      setTimeout(function() {
+        animationTargetEl.classList.remove(animationToRemove);
+      }, 500);
+    });
+  </script>
+</body>
+</html>
