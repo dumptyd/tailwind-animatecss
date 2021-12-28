@@ -1,8 +1,9 @@
 {
   "name": "tailwind-animatecss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "animate.css as a Tailwind plugin",
   "main": "plugin.js",
+  "homepage": "https://dumptyd.github.io/tailwind-animatecss/",
   "repository": "https://github.com/dumptyd/tailwind-animatecss/",
   "author": "dumptyd",
   "license": "MIT",
