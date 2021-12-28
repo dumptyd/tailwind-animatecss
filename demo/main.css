@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply font-sans antialiased;
+}
+
+.layout {
+  @apply flex flex-col h-screen overflow-hidden;
+  @apply md:flex-row;
+}
+
+.layout__main {
+  @apply flex-1 flex items-center justify-center bg-gray-100 text-center;
+}
+
+.layout__sidebar {
+  @apply w-full h-2/5 overflow-auto px-2 border-t z-10 bg-white;
+  @apply md:w-64 md:h-full md:border-l md:border-t-0;
+}
+
+.main-heading {
+  @apply text-2xl leading-loose font-bold flex items-center justify-center border border-gray-300 bg-white px-4 rounded-lg mb-3;
+  @apply sm:text-4xl sm:leading-loose sm:mb-5;
+  @apply lg:text-5xl lg:leading-loose lg:mb-6;
+}
+
+.main-heading__logo {
+  @apply inline-block mr-2 h-auto;
+  @apply lg:mr-3;
+  width: 1.5em;
+}
+
+.main-subheading {
+  @apply text-lg font-semibold text-gray-600;
+  @apply sm:text-xl;
+  @apply lg:text-2xl;
+}
+
+.main-github {
+  @apply inline-block mt-8 px-1;
+}
+.main-github__logo {
+  @apply h-12 mx-auto;
+}
+.main-github__arrow {
+  @apply hidden animatecss animatecss-infinite animatecss-headShake animatecss-slower ml-1;
+  @apply lg:inline-block;
+}
+
+.animation-list {
+  @apply pb-4;
+}
+
+.animation-list__heading {
+  @apply mt-4 mb-1 px-3 text-sm font-semibold text-black uppercase;
+}
+
+button[data-animation-name] {
+  @apply py-1 px-4 rounded cursor-pointer transform transition-transform animatecss w-full h-full text-left;
+  @apply hover:bg-sky-200;
+  @apply active:scale-95;
+}
+
+.animatecss-link {
+  @apply px-1 text-indigo-600 font-bold border-current;
+}
