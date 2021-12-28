@@ -1,6 +1,6 @@
 {
   "name": "tailwind-animatecss",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "animate.css as a Tailwind plugin",
   "main": "plugin.js",
   "homepage": "https://dumptyd.github.io/tailwind-animatecss/",
