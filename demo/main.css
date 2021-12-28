@@ -45,7 +45,7 @@ html, body {
   @apply h-12 mx-auto;
 }
 .main-github__arrow {
-  @apply hidden animatecss animatecss-infinite animatecss-headShake animatecss-slower ml-1;
+  @apply hidden animatecss-infinite animatecss-headShake animatecss-slower ml-1;
   @apply lg:inline-block;
 }
 
@@ -58,7 +58,7 @@ html, body {
 }
 
 button[data-animation-name] {
-  @apply py-1 px-4 rounded cursor-pointer transform transition-transform animatecss w-full h-full text-left;
+  @apply py-1 px-4 rounded cursor-pointer transform transition-transform w-full h-full text-left;
   @apply hover:bg-sky-200;
   @apply active:scale-95;
 }
