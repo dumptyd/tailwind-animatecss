@@ -2,6 +2,8 @@
 
 Use animate.css as a Tailwind 3 plugin.
 
+**Demo** &ndash; https://dumptyd.github.io/tailwind-animatecss
+
 ### Table of contents
 
 - [Installation](#installation)
