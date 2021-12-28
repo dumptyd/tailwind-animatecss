@@ -10,7 +10,7 @@ Use animate.css as a Tailwind 3 plugin.
 - [Usage](#usage)
 - [Advanced](#advanced)
   - [Changing the prefix](#changing-the-prefix)
-  - [How this plugin differs from other implementations](#how-this-project-differs-from-other-implementations)
+  - [How this plugin differs from other implementations](#how-this-plugin-differs-from-other-implementations)
 
 ### Installation
 
